@@ -1,0 +1,7 @@
+{
+  "name": "CentroMec",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
