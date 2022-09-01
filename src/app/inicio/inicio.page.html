@@ -7,18 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-card *ngIf="entradaActual">
     <ion-card-content>
       <p id="fechaTexto">{{entradaActual.fechaTexto}}</p>
-      <p>Ingresar nombre, correo, numero para realizar la atencion (llamada)</p>
-      <ion-textarea rows="15" [(ngModel)] = "entradaActual.texto">
-        
-      </ion-textarea>
+      <p >Para agendar horas debe ir a la sección Entradas</p>
     </ion-card-content>
-    <ion-button expand="block" (click)="guardar(entradaActual)">
+    <!-- <ion-button expand="block" (click)="guardar(entradaActual)">
       Guardar
-    </ion-button>
+    </ion-button> -->
   </ion-card>
 </ion-content>
 

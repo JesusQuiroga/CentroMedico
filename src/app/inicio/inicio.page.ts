@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
+import { NavigationExtras } from '@angular/router';
 import * as moment from 'moment'; //herramienta para fechas 
 
 @Component({
@@ -98,4 +99,5 @@ export class InicioPage implements OnInit {
     localStorage.setItem('entradas',JSON.stringify(this.entradas));
   }
 
+  
 }

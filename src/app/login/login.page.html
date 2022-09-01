@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-card>
     <ion-card-header>
       <ion-card-title>Inicio de Sesion</ion-card-title>
@@ -21,7 +21,7 @@
         </ion-item>
       </form>
       <br>
-      <ion-button (click)="ingresar()">
+      <ion-button RouterLink="/inicio" (click)="ingresar()" >
         Ingresar
       </ion-button>
     </ion-card-content>

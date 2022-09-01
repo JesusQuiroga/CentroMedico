@@ -36,15 +36,15 @@ export class MenuPage implements OnInit {
   async salir(){
     const alert = await this.alertController.create({
       header: 'Salir',
-      message: '¿Deberitas te quieres salir?',
+      message: '¿Realmente quiere salir?',
       buttons: [
         {
-          text: 'No mejor no',
+          text: 'No',
           handler: () => {
             
           }
         }, {
-          text: 'Sii',
+          text: 'Si',
           handler: () => {
             localStorage.removeItem('ingresado');
             this.navCtrl.navigateRoot('login');
